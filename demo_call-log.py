@@ -1,9 +1,7 @@
 # 1) Load Environment with Credentials
 # $ pip3 install -U python-dotenv
 import os
-from pathlib import Path  # python3 only
 from dotenv import load_dotenv
-env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=os.getenv('ENV_PATH'))
 
 # 2) Instantiate SDK
