@@ -28,10 +28,10 @@ except: # For Python 3
     from urllib.parse import urlencode
 
 query = {
-    'type': 'Voice',
-    'direction': 'Outbound',
     'dateFrom': '2018-05-01T00:00:00Z',
     'dateTo': '2018-06-01T00:00:00Z',
+    'direction': 'Outbound',
+    'type': 'Voice',
     'view': 'Detailed'}
 
 qs = urlencode(query)
