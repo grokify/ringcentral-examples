@@ -3,7 +3,7 @@ from bottle import route, run
 from bottle import request, response
 
 @route('/webhook', method='POST')
-def returnwebhook():
+def handlewebhook():
     vtHeader = 'Validation-Token'
     vt = request.get_header(vtHeader)
     if vt is not None and len(vt) > 0:
