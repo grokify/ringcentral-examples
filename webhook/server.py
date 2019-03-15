@@ -5,7 +5,7 @@ from bottle import request, response, route, run
 def handlewebhook():
     vtHeader = 'Validation-Token'
     vt = request.get_header(vtHeader)
-    if vt is not None and len(vt) > 0:
+    if vt is not None:
        response.set_header(vtHeader, vt)
     print(request.body.getvalue().decode('utf-8'), file=sys.stdout)
 
