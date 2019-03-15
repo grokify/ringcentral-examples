@@ -16,7 +16,7 @@ Run ngrok to have a public URL tunnel to `localhost:8080`
 $ ngrok http 8080
 ```
 
-## 2) Create The Subscription
+## 2) Create the Subscription
 
 Create a `.env` file with your credentials.
 
