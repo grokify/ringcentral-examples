@@ -2,7 +2,12 @@
 # $ pip3 install -U python-dotenv
 import os
 from dotenv import load_dotenv
-load_dotenv(dotenv_path=os.getenv('ENV_PATH'))
+
+env_path = os.getenv("ENV_PATH")
+if env_path is not None and len(env_path)>0:
+    load_dotenv(dotenv_path=env_path)
+else:
+    load_dotenv()
 
 # 2) Instantiate SDK
 # $ pip3 install -U ringcentral
