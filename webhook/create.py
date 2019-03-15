@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from ringcentral import SDK
 
 env_path = os.getenv("ENV_PATH")
-if env_path is not None and len(env_path)>0:
+if env_path is not None and len(env_path) > 0:
     load_dotenv(dotenv_path=env_path)
 else:
     load_dotenv()
