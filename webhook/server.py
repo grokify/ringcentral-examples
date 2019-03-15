@@ -1,6 +1,5 @@
 import sys
-from bottle import route, run
-from bottle import request, response
+from bottle import request, response, route, run
 
 @route('/webhook', method='POST')
 def handlewebhook():
